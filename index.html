@@ -3,40 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <title>Pirates Clothing</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body{margin:0;font-family:Arial}
+    nav{background:#000;color:#fff;padding:15px;display:flex;justify-content:space-between}
+    nav ul{list-style:none;display:flex;gap:20px}
+    .hero{text-align:center;padding:70px;background:#f2f2f2}
+    .products{padding:30px;text-align:center}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px}
+    .card{border:1px solid #ddd;padding:15px}
+    .card img{width:100%}
+    .btn{background:#000;color:#fff;padding:10px 20px;text-decoration:none;display:inline-block}
+    footer{text-align:center;padding:15px;background:#000;color:#fff}
+  </style>
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar">
-    <h1>PIRATES</h1>
-    <ul>
-      <li>Home</li>
-      <li>Products</li>
-      <li>About</li>
-      <li>Contact</li>
-    </ul>
-  </nav>
+<nav>
+  <h2>PIRATES</h2>
+  <ul>
+    <li>Home</li>
+    <li>Products</li>
+    <li>Contact</li>
+  </ul>
+</nav>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h2>New Fashion Collection</h2>
-    <p>Style that rules the street</p>
-    <button>Shop Now</button>
-  </section>
+<section class="hero">
+  <h1>New Fashion Collection</h1>
+  <p>Rule your style. Be a Pirate.</p>
+  <a class="btn" href="#products">Shop Now</a>
+</section>
 
-  <!-- Products -->
-  <section class="products">
-    <h2>Popular Products</h2>
-
-    <div class="product-box">
-      <img src="images/shirt.jpg" alt="Shirt">
-      <h3>Men Shirt</h3>
-      <p>₹999</p>
-      <a href="https://wa.me/91XXXXXXXXXX">Order on WhatsApp</a>
+<section id="products" class="products">
+  <h2>Popular Products</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="https://via.placeholder.com/300">
+      <h3>Printed T-Shirt</h3>
+      <p>₹799</p>
+      <a class="btn" href="#">Order on WhatsApp</a>
     </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/300">
+      <h3>Casual Shirt</h3>
+      <p>₹1199</p>
+      <a class="btn" href="#">Order on WhatsApp</a>
+    </div>
+  </div>
+</section>
 
-  </section>
+<footer>
+  © 2026 Pirates Clothing
+</footer>
 
 </body>
 </html>
