@@ -1,0 +1,174 @@
+:root {
+  --bg-dark: #121212;
+  --card-dark: #1E1E1E;
+  --text-main: #E0E0E0;
+  --text-soft: #B0B0B0;
+  --gold: #C39B52;
+  --gold-hover: #E0B75F;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: var(--bg-dark);
+  color: var(--text-main);
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  background: #121212;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 20px;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #222;
+}
+
+.logo {
+  color: var(--gold);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.menu-icon {
+  color: var(--gold);
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  background: var(--card-dark);
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  padding: 16px;
+  border-radius: 10px;
+  gap: 14px;
+}
+
+.nav-links a {
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: var(--gold);
+}
+
+.nav-gold {
+  color: var(--gold);
+  border: 1px solid var(--gold);
+  padding: 6px 14px;
+  border-radius: 20px;
+}
+
+/* ===== HERO ===== */
+.hero {
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.hero h1 {
+  font-size: 32px;
+  letter-spacing: 2px;
+}
+
+.hero p {
+  color: var(--text-soft);
+  margin-top: 10px;
+}
+
+.btn-gold {
+  display: inline-block;
+  margin-top: 20px;
+  background: var(--gold);
+  color: black;
+  padding: 12px 26px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-gold:hover {
+  background: var(--gold-hover);
+}
+
+/* ===== PRODUCTS ===== */
+.products {
+  padding: 40px 20px;
+}
+
+.products h2 {
+  text-align: center;
+  color: var(--gold);
+  margin-bottom: 20px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+}
+
+.product {
+  background: var(--card-dark);
+  padding: 14px;
+  border-radius: 12px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.product:hover {
+  transform: scale(1.05);
+  border: 1px solid var(--gold);
+}
+
+.product img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.price {
+  color: var(--gold);
+  font-weight: 600;
+}
+
+/* ===== ABOUT ===== */
+.about {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.about h2 {
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+
+.about p {
+  color: var(--text-soft);
+  max-width: 500px;
+  margin: auto;
+}
+
+.about-points {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.about-points div {
+  background: var(--card-dark);
+  padding: 12px;
+  border-radius: 10px;
+}
