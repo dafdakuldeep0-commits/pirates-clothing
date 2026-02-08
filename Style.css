@@ -172,3 +172,58 @@ body {
   padding: 12px;
   border-radius: 10px;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #0b0b0b;
+  color: #fff;
+}
+
+/* NAVBAR */
+.navbar {
+  padding: 15px;
+  background: #000;
+  border-bottom: 1px solid gold;
+}
+
+.logo {
+  color: gold;
+  letter-spacing: 3px;
+}
+
+/* HERO */
+.hero {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 32px;
+  color: gold;
+}
+
+.hero button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: gold;
+  border: none;
+  font-weight: bold;
+}
+
+/* PRODUCTS */
+.products {
+  padding: 40px 20px;
+}
+
+.product-box {
+  background: #151515;
+  margin: 15px 0;
+  padding: 20px;
+  border-left: 3px solid gold;
+}
